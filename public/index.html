@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Video Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="screen">
+      <div class="container-fluid">
+        <div class="row h-90 w-100">
+          <div class="col-12 col-sm-6 d-flex justify-content-center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item"></video>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 d-flex justify-content-center">
+            <div id="peerheading"></div>
+            <div
+              id="peerDiv"
+              class="embed-responsive embed-responsive-16by9"
+            ></div>
+          </div>
+        </div>
+        <div class="row h-10 w-100">
+          <div class="close">
+            <a href="http://localhost:3000/close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 172 172"
+                style="fill: #000000;"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal;"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g fill="#e74c3c">
+                    <path
+                      d="M57.33333,17.18881c0.72787,0 0.72787,0 1.42774,0.72786c0.72786,0.72787 2.88347,2.85547 2.88347,4.3112c0,1.42773 0,5.01106 0.69987,7.86653c1.42774,3.58333 2.88347,12.9056 5.01107,17.91667c2.1556,5.01107 2.88346,7.89453 0.72786,10.75c-2.1556,3.58333 -15.76107,17.2168 -15.76107,17.2168c0,0 3.58333,7.16667 7.86654,11.44987c3.58333,5.01107 9.32226,12.17774 16.48893,17.91667c7.16667,6.4668 15.06119,12.17774 22.92774,15.76107c7.89453,-7.86654 14.33333,-14.33333 16.48893,-15.76107c2.1556,-1.42774 2.1556,-2.1556 5.73893,-0.69987c3.58333,1.42773 8.5944,3.58333 14.33333,4.2832c5.01107,0.72786 10.75,1.42774 14.33333,2.1556c3.58333,0.72787 3.58333,0.72787 4.3112,2.1556c1.42773,1.42774 2.1276,3.58333 2.1276,4.28321c0,0.72786 0,2.88346 0,10.05012c0,7.16667 0,17.18881 0,19.3444c0,2.1556 0,2.1556 -0.69988,3.58333c-0.72786,1.42774 -1.42773,5.01107 -1.42773,5.01107c0,0.72786 -3.58333,2.1556 -5.73894,2.1556c-2.1556,0 -10.05012,0 -15.06119,-0.72786c-5.01107,-0.69988 -18.61653,-3.58333 -23.6556,-5.71094c-5.01107,-1.45573 -21.5,-7.16667 -41.54427,-22.22787c-18.64453,-14.33333 -32.25,-33.67774 -40.14453,-49.4388c-7.89453,-15.78906 -12.17774,-32.97787 -12.9056,-41.57227c-1.42774,-8.5944 -1.42774,-12.17773 -1.42774,-14.33333c0.72787,-2.1556 2.85547,-4.31119 4.3112,-5.01106c1.42773,-0.72787 3.58333,-1.45573 5.71094,-1.45573c2.1556,0 7.89453,0 15.78906,0c7.86653,0 17.1888,0 17.1888,0z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>

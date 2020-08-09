@@ -1,0 +1,13 @@
+.cards {
+  position: relative;
+  left: 40rem;
+  top: 10rem;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: 1539px 852px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 754px;
+}

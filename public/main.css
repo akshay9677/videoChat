@@ -1,0 +1,49 @@
+body {
+  background-repeat: no-repeat;
+  background-size: 1539px 852px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 754px;
+}
+
+video {
+  transform: rotateY(180deg);
+}
+
+.select {
+  height: 30px;
+}
+
+.h-90 {
+  height: 90% !important;
+}
+
+.h-10 {
+  height: 10% !important;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: relative;
+  left: 46rem;
+  text-align: center;
+  bottom: 0.5rem;
+}
+
+.image {
+  height: 50px;
+  width: 50px;
+}
+
+.cards {
+  position: relative;
+  left: 40rem;
+  top: 10rem;
+}
